@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dht sensor</title>
+    <script defer type="module" src="{{url_for('static', filename='index.js')}}"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6d53019a68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex justify-center my-16">
+    <div class="rounded-xl text-sm bg-slate-800 text-white font-mono py-1 px-2 inline-flex">
+        <b data-js="timestamp">timestamp</b>
+    </div>
+    </div>
+
+    <div class="flex justify-center">
+    <div>
+        <div class="p-8 bg-gray-100 text-4xl rounded-lg shadow-xl inline-flex">
+            <div class="inline-flex font-bold pr-16 text-red-500">
+                <div class="pr-2">
+                    <i class="fa-solid fa-temperature-half"></i>
+                </div>
+
+                <div class="inline-flex">
+                    <div data-js="temperature-count" class="pr-1">0</div>
+                    <div class="text-2xl">°C</div>
+                </div>
+            </div>
+
+            <div class="inline-flex font-bold text-sky-700">
+                <div class="pr-2">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+                <div class="inline-flex">
+                    <div data-js="humidity-count" class="pr-1">0</div>
+                    <div class="text-2xl">%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
